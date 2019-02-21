@@ -2,9 +2,14 @@
 //
 
 #include <iostream>
+#include "cl/CLHelper.h"
 
-int main()
+int main(int argc, char **argv)
 {
-    std::cout << "here we start!\n"; 
-}
 
+	CLHelper* clHelper = new CLHelper(argv, argc);
+
+	clHelper->parse();
+
+    
+}
