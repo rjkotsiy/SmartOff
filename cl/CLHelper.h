@@ -9,13 +9,20 @@ public:
 	CLHelper(const char** argv, const int argc);
 	~CLHelper();
 
-	void printHelpUsage();
 	void parse();
 
 private:
 
-	std::vector<std::string> tokens;
+	struct ParamStruct
+	{
+		std::string param_name;
+		std::string param_value;
+	};
+
 	void printHeader();
+	void printHelpUsage();
+
+	std::vector<ParamStruct> tokens;
 
 };
 

@@ -7,7 +7,7 @@
 int main(int argc, char **argv)
 {
 
-	CLHelper* clHelper = new CLHelper(argv, argc);
+	CLHelper* clHelper = new CLHelper((const char **)argv, (const int) argc);
 
 	clHelper->parse();
 
