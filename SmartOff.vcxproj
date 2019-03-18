@@ -151,11 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cl\CLHelper.cpp" />
+    <ClCompile Include="cl\CommandLineHelper.cpp" />
     <ClCompile Include="SmartOff.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cl\CLHelper.h" />
+    <ClInclude Include="cl\CommandLineHelper.h" />
+    <ClInclude Include="Action.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

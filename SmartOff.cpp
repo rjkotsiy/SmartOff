@@ -2,14 +2,14 @@
 //
 
 #include <iostream>
-#include "cl/CLHelper.h"
+#include "cl/CommandLineHelper.h"
 
 int main(int argc, char **argv)
 {
 
-	CLHelper* clHelper = new CLHelper((const char **)argv, (const int) argc);
+	CommandLineHelper* clHelper = new CommandLineHelper((const char **)argv, (const int) argc);
 
-	clHelper->parse();
+	clHelper->createActionChain();
 
     
 }
